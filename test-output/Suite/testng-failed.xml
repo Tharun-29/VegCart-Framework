@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="FreshHarvest.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="FreshHarvest.frameworkDesign.StandaloneTest">
+        <methods>
+          <include name="placeOrder"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FreshHarvest.frameworkDesign.StandaloneTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
